@@ -2,34 +2,29 @@
 <html>
 <head>
     <style>
-    
-    [target] {
-        border:5px solid black;
-    }
-    
-    [tooltip] {
-        border: 5px solid blue;
-    }
+        [target] {
+            border: 5px solid black;
+        }
 
-    [tooltip="link1"] {
-        font-size:50px;
-    }
+        [tooltip] {
+            border: 5px dotted blue;
+        }
 
-    a[target]{ 
-        color:red;
-    }
-    
+        [tooltip="link 1"] {
+            font-size: 50px;
+        }
+        a[title] {
+            color: red;
+        }
     </style>
 </head>
 <body>
-    <h4><a href="#" target="_blank">Lorem, ipsum dolor.</a></h4><br>
-    <h4><a href="#" target="_blank">Quia, nihil nesciunt.</a></h4><br>
-    <h4><a href="#" tooltip="link1">Adipisci, temporibus blanditiis.</a></h4><br>
-    <h4><a href="#" tooltip="link2">Accusamus, voluptas unde.</a></h4><br>
-    <h4><a href="#" tooltip="link3">Aliquam, voluptatibus iste!</a></h4><br>
+    <a href="#" target="_blank">Lorem, ipsum dolor.</a>
+    <a href="#" target="_blank">Fuga, nobis a?</a>
+    <a href="#" tooltip="link 1">Magni, doloribus placeat?</a>
+    <a href="#" tooltip="link 2">Architecto, porro nostrum.</a>
+    <a href="#" tooltip="link 3">Totam, itaque quod!</a>
 
-    <a href="#" title="">Lorem, ipsum dolor.</a> 
-
-
+    <a href="#" title="">Lorem, ipsum dolor.</a>
 </body>
 </html>
