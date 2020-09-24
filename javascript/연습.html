@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <select name="" id="종류" onchange="show();">
+        <option value="a">딸기</option>
+        <option value="b">바나나</option>
+        <option value="c">포도</option>
+    </select>    
+    <p id="result"></p>   
+    <script>
+        function show() {
+            var 종류 = document.getElementById("종류").value;
+            종류=종류;
+            var txt="";
+
+            switch (종류) {
+                case "딸기":
+                    txt = "딸기는 쌍떡잎식물의 이판화군 장미목 장미과의 여러해살이풀 혹은 그 열매.";
+                    break;
+                case "바나나":
+                    txt = "흔히 바나나 나무라는 말을 많이 쓰지만, 사실은 나무가 아니라 여러해살이 풀이다.[1] 열매인 바나나를 채취하고 난후, 바나나 풀의 줄기를 잘라줘야 다시 성장하는데 도움이 된다. 아마 열대지방에서 멀리 떨어진 내륙지역에 사는 사람들에게 있어서 바나나는 그들이 알고 있는 열대과일 중에서도 제일 익숙한 과일일 것이다.";
+                    break;
+                default:
+                    txt = "포도과의 낙엽 활엽 덩굴성 나무 및 그 열매를 이르는 말";
+
+                        
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+        
+       
+    </script>
+</body>
+</html>
