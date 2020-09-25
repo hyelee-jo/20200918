@@ -2,30 +2,24 @@
 <html>
 <head>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
     </style>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                    $("h1").toggle(3000, function() {
+                        $("h1").toggle(3000);
+                    });
+                    // $("h1").fadeOut(3000);
+                });
+                
+        
+        });
+    </script>
 </head>
 <body>
-    <script>
-       console.log("while을 이용한 반복문 예제");
-       
-        var i = 0;
-        while (i<10) {
-            console.log(i);
-            i++;
-        }
-        
-        console.log("for을 이용한 반복문 예제");
-        var i = 0;
-        for (var i=0; i<10; i++){
-            console.log(i);
-        }
-
-        
-
-
-    </script>
-
-
+    <button id ="btn1">toggle</button>
+    <h1>Lorem, ipsum dolor.</h1>
 </body>
 </html>
